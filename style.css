@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth; 
+    -webkit-tap-highlight-color:rgba(255,255,255,0.1);
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+.landing-page{
+    height:100vh;
+    width:100%;
+    background-color:#FFF;
+    
+    background-image:url("https://pixabay.com/get/gaa1018c8386ebeebe8320130fab102289b75ce1a972ff0be3832306aab8fe84c0ecc04375cc80d6ac4bebe59a4505a456275993836f6190ef46da71a86c4c2ff890e2999ee69b61a17445e7609586c9e_1920.jpg");
+    background-position:center;
+    
+}
+.nav-page{
+    position:fixed;
+    top:0;
+    width:100%;
+    
+    z-index:1000;
+}
+.nav-page-blur{
+    -webkit-backdrop-filter:blur(30px);
+    backdrop-filter:blur(30px);
+}
+.nav-bar{
+    height:50px;
+    background-color:rgba(255,255,255,1);
+    
+    width:100%;
+}
+.nav-toggle{
+    /*background-color:blue;*/
+    height:50px;
+    width:50px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.nav-toggle .nav-toggle-bar{
+    display:block;
+    height:1px;
+    width:25px;
+    background-color:#121212;
+    margin:2px;
+    transition:250ms;
+}
+
+
+.nav{
+    height:calc(100vh - 50px);
+    width:100%;
+    background-color:rgba(255,255,255,0.6);
+    
+    /*position:absolute;*/
+  /*  display:block;*/
+    opacity:0;
+    visibility:hidden;
+    transition:250ms;
+}
+.nav-active{
+    opacity:1;
+    visibility:visible;
+}
+.nav ul{
+    height:100%;
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    
+    align-items:center;
+    justify-content:center;
+    
+    transition:250ms;
+    margin-left:100px;
+    filter:blur(5px);
+}
+.nav ul li{
+    
+}
+.nav ul li a{
+    display:block;
+    padding:15px;
+    margin:15px;
+    text-decoration:none;
+    color:#121212;
+    
+    font-size:1.5em;
+    font-weight:700;
+}
+.home{
+/*	height:calc(100% - 50px);*/
+	height:100%;
+	width:100%;
+/*	background:red;*/
+	
+	/*transform:translateY(50px);*/
+	
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	/*flex-direction:row;*/
+	align-items:center;
+	justify-content:center;
+	
+	
+	background:linear-gradient(#FFF,#EEE)
+	
+}
+.landing-page-image-cont{
+	/*background:green;*/
+	
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.landing-page-image{
+	height:50vh;
+	
+	
+}
+.landing-page-text-cont{
+	/*background:blue;*/
+}
+.landing-page-text-cont h1{
+	font-size:3em;
+}
+.landing-page-text-cont h2{
+	font-size:1em;
+/*	background-color:#121212;*/
+	background:linear-gradient(to right,#121212,#333,#121212);
+	color:#FFF;
+	padding:10px;
+	margin:10px 0 10px 0;
+	display:block;
+}
+.landing-page-text-cont h3{
+	font-size:1.5em;
+}
+.about-page{
+    height:calc(100vh - 50px);
+    width:100%;
+    background-color:#222;
+    overflow:scroll;
+    
+    display:grid;
+    align-items:center;
+    justify-content:center;
+}
+.about-me{
+	padding:15px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+}
+.about-me h1{
+    color:#FFF;
+    padding:5px;
+    padding:0px 0 0 0;
+    font-size:2em;
+}
+.about-me-img{
+	height:75px;
+}
+.nihad-photo{
+	height:150px;
+	padding:15px;
+	border-radius:100%;
+}
+
+.about-me-para{
+	color:#FFF;
+	padding:15px;
+	font-size:1em;
+	
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	
+}
+/*@media only screen   
+and (min-width: 1370px)  
+and (max-width: 1605px){ 
+	.about-page{
+		
+	}
+}  */
+
+@media only screen and (orientation: landscape) {
+	.about-page{
+	display:grid;
+	grid-template-columns:1fr 2fr;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.about-page{
+	display:grid;
+	grid-template-columns:1fr 2fr;
+	}
+}
+
+
+@media only screen and (min-width : 992px) {
+.about-page{
+	display:grid;
+	grid-template-columns:1fr 2fr;
+	}
+	
+}
+
+.skills-page{
+	
+}
+.contactme-page{
+
+}
+
+
+.footer{
+	background:#000;
+	
+}
+.footer p{
+	color:#FFF;
+	padding:75px;
+	text-align:center;
+	font-size:0.6em;
+}
+
